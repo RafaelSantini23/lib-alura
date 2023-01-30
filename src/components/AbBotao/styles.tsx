@@ -1,14 +1,26 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { AbBotaoProps } from '.';
 
-export const BotaoEstilizado = styled.button`
-  background: #eb9b00;
+export const BotaoEstilizado = styled.button<AbBotaoProps>`
+  background: ${({ color }) => (color === 'primary' ? '#eb9b00' : '#FFF')};
   padding: 16px 32px;
   border: 2px solid #eb9b00;
-  color: #fff;
+  color: ${({ color }) => (color === 'primary' ? '#FFF' : '#eb9b00')};
   font-size: 20px;
   cursor: pointer;
-  &:hover {
-    background: #b87900;
-    border-color: #b87900;
-  }
+  ${({ color }) =>
+    color === 'primary'
+      ? css`
+          &:hover {
+            background: #b87900;
+            border-color: #b87900;
+          }
+        `
+      : css`
+          &:hover {
+            background: #fff;
+            border-color: #b87900;
+            color: #b87900;
+          }
+        `}
 `;
