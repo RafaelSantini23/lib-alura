@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { AbBotaoProps } from '.';
+import { IbBotaoProps } from '.';
 
-export const BotaoEstilizado = styled.button<AbBotaoProps>`
+export const BotaoEstilizado = styled.button<IbBotaoProps>`
   background: ${({ color }) => (color === 'primary' ? '#eb9b00' : '#FFF')};
   padding: 16px 32px;
   border: 2px solid #eb9b00;
