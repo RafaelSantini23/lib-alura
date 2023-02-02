@@ -1,7 +1,7 @@
 import React from 'react';
 import { BotaoEstilizado } from './styles';
 
-export interface IbBotaoProps extends React.HTMLAttributes<HTMLButtonElement> {
+export interface IAbBotaoProps extends React.HTMLAttributes<HTMLButtonElement> {
   text?: string;
   color?: 'primary' | 'secondary';
   onClick?: () => void;
@@ -12,7 +12,7 @@ export const AbBotao = ({
   color = 'primary',
   onClick,
   ...props
-}: IbBotaoProps) => {
+}: IAbBotaoProps) => {
   return (
     <BotaoEstilizado onClick={onClick} color={color} {...props}>
       {text}

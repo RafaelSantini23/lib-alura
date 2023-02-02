@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AbBotao, AbBotaoProps } from '../src';
+import { AbBotao, IAbBotaoProps } from '../src';
 
 export default {
   title: 'Components/AbBotao',
@@ -14,11 +14,11 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   text: 'Button Primary',
-} as AbBotaoProps;
+} as IAbBotaoProps;
 
 export const Secondary = Template.bind({});
 
 Secondary.args = {
   text: 'Button Secondary',
   color: 'secondary',
-} as AbBotaoProps;
+} as IAbBotaoProps;
