@@ -1,3 +1,15 @@
+# v0.4.5 (Fri Feb 03 2023)
+
+#### ⚠️ Pushed to `main`
+
+- feat: criando componente counter ([@RafaelSantini23](https://github.com/RafaelSantini23))
+
+#### Authors: 1
+
+- [@RafaelSantini23](https://github.com/RafaelSantini23)
+
+---
+
 # v0.4.4 (Thu Feb 02 2023)
 
 #### ⚠️ Pushed to `main`
