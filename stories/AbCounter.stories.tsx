@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { AbCounter } from '../src';
+import { AbCounter, IAbCounter } from '../src';
 
 export default {
   title: 'components/AbCounter',
@@ -21,4 +21,4 @@ const Template: ComponentStory<typeof AbCounter> = args => {
 
 export const Default = Template.bind({});
 
-Default.args = {};
+Default.args = {} as IAbCounter;
